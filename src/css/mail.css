@@ -1,0 +1,183 @@
+.mail {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: #101010;
+}
+
+#closeMail {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    background: none;
+    border: 1px solid #ffffff70;
+}
+#closeMail:hover {
+    background: #10101070;
+}
+
+.mailContainer {
+    overflow-y: scroll;
+    height: calc(100vh - 100px);
+    width: 100%;
+    position: fixed;
+    top: 100px;
+    left: 0;
+}
+.mailContainer::-webkit-scrollbar {width: 1px;background-color: transparent;}
+.mailContainer::-webkit-scrollbar-thumb {background: transparent;}
+
+.mailApp {
+    border-radius: 5px;
+    width: 900px;
+    padding: 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px, rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    color: #fff;
+    background: #171717;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #363636;
+}
+
+
+
+
+
+
+
+
+
+.mail-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.mail-header img {
+    border-radius: 6px;
+    margin: 10px;
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.mail-header ul {
+    margin: 10px;
+}
+
+.mail-header ul span {
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.mail-header ul p {
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Sen', sans-serif;
+    font-size: .9rem;
+    margin-bottom: 10px;
+    text-transform: lowercase;
+    margin-top: 5px;
+}
+
+.mail-header ul p span {
+    margin-left: 5px;
+    margin-top: -6px;
+    border-radius: 6px;
+    padding: 5px 5px;
+    background: #1d1d1d;
+    color: #5865f2;
+}
+
+.mail-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+.mail-content h1 {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Sen', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.mail-content p {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Sen', sans-serif;
+    font-size: .9rem;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.delta {
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: #101010;
+}
+
+#closeDelta {
+    padding: 5px 5px;
+    position: fixed;
+    top: 25px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 1.2rem;
+    color: #ffffff70;
+    background: transparent;
+    transition: .5s ease-in-out;
+    border-radius: 5px;
+}
+#closeDelta:hover {
+    color: #ffffff;
+    background: #5865f2;
+}
+
+
+iframe {
+    border: none;
+    border-top: 25px solid #101010;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    margin: auto;
+}
