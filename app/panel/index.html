@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eronix v1</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../src/css/window.css">
+    <link rel="stylesheet" href="../../src/css/style.css">
+    <link rel="stylesheet" href="../../src/css/news.css">
+    <link rel="stylesheet" href="../../src/css/mail.css">
+    <link rel="stylesheet" href="../../src/css/settings.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+    <script defer src="../../src/js/windowRender.js"></script>
+</head>
+
+<body>
+    <section class="main">
+        <div class="mainx"></div>
+    </section>
+    <div class="window">
+        <div class="container">
+            <div class="window-move"></div>
+            <div class="window-button">
+                <button class="window-button" id="minimizeBtn"><i class="fa-light fa-minus"></i></button>
+                <button class="window-button" id="maximizeBtn"><i class="fa-light fa-square"></i></button>
+                <button class="window-button closed" id="closeBtn"><i class="fa-light fa-xmark-large"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <section class="header">
+        <div class="container">
+            <p class="title" id="coucou">ERONIX</p>
+        </div>
+    </section>
+
+    <section class="mail" id="mailBox">
+        <div class="container">
+            <button onclick="closeNotifier()" id="closeMail"><i class="fa-light fa-xmark"></i></button>
+            <div class="mailContainer" id="mailAuto"></div>
+        </div>
+    </section>
+
+
+    <section class="welcome">
+        <div class="container">
+            <div class="welcome-container">
+                <div class="welcome-col1" id="newsAuto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="sidebar">
+        <div class="container">
+            <ul>
+                <span id="online"></span>
+                <button id="profiled">
+                    <img id="pdpMC" src="https://minotar.net/helm/0z5ez0a51r/40.png">
+                </button>
+            </ul>
+            <ul>
+                <button onclick="play()" id="playLaunch"><i class="fa-light fa-play" id="played"></i></button>
+                <button onclick="settings()"><i class="fa-light fa-gear"></i></button>
+                <button onclick="notifier()"><i class="fa-light fa-bell"></i></button>
+                <button onclick="logout()"><i class="fa-light fa-right-from-bracket"></i></button>
+            </ul>
+        </div>
+    </div>
+
+    <section class="reseaux">
+        <div class="container">
+            <div class="social">
+                <ul><i class="fa-brands fa-youtube" id="youtube"></i></ul>
+                <ul>
+                    <p>YouTube</p>
+                    <span>@EronixOff</span>
+                </ul>
+            </div>
+            <div class="social">
+                <ul><i class="fa-brands fa-twitter" id="twitter"></i></ul>
+                <ul>
+                    <p>Twitter</p>
+                    <span>@EronixOff</span>
+                </ul>
+            </div>
+            <div class="social">
+                <ul><i class="fa-brands fa-discord" id="discord"></i></ul>
+                <ul>
+                    <p>Discord</p>
+                    <span>discord.gg/eronixfr</span>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <p> <span>Eronix</span>・2023 - Tous droits réservés.</p>
+            <p>non affilié à mojang, AB.</p>
+        </div>
+    </section>
+
+
+    <section class="delta" id="deltaBox">
+        <button onclick="closeBeta()" id="closeDelta"><i class="fa-solid fa-arrow-left"></i></button>
+        <iframe src="" id="charlie"></iframe>
+    </section>
+
+
+
+    <section class="settings" id="settings">
+        <button onclick="closeSettings()" id="closeSettings"><i class="fa-light fa-xmark"></i></button>
+        <ul class="scrolled">
+            <div class="sett-box">
+                <div class="slider">
+                    <p>Ram Maximale allouer [<span class="range-value" id="rangeValue">0</span>G]</p>
+                    <input class="range-slider" id="rangeSlider" type="range" value="0" min="1" max="8">
+                </div>
+            </div>
+        </ul>
+    </section>
+
+    <div class="alert-primary" id="alertLaunch">
+        <p>Lancement du jeu en cours...</p>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="../../src/js/managerClient.js"></script>
+    <script src="../client/firebase.js"></script>
+    <script src="../client/launchClient.js"></script>
+    <script src="../client/installerClient.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+directories:
+  output: build
+  buildResources: public
+appId: fr.Eronix.Eronix
+productName: eronix
+win:
+  icon: ./public/icons/png/256x256.png
+files:
+  - filter:
+      - ./build/**/*
+      - ./dist/**/*
+      - ./node_modules/**/*
+      - ./public/**/*
+      - ./app/**/*
+      - ./src/**/*
+      - '*.index.js'
+      - '*.js'
+mac:
+  category: public.app-category.utilities
+  target: dmg
+extraResources:
+  - filter:
+      - res
+      - favicon.png
+electronVersion: 19.1.9
